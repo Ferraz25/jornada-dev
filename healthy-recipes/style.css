@@ -2,24 +2,27 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body * {
-  color: #ebf1fb;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
   background-image: url(./assets/recipes-image.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   height: 100vh;
 
-  text-align: center;
-  padding: 275px;
+  font-family: "Spectral", serif;
+  display: grid;
+  place-content: center;
+
+  color: #ebf1fb;
 }
 
 h1 {
-  font-family: "Beth Ellen";
+  font-family: "Beth Ellen", cursive;
+  font-weight: 400;
   font-size: 64px;
   line-height: 120px;
 }
@@ -29,25 +32,33 @@ h1 span {
 }
 
 p {
-  margin-top: 4px;
-  font-family: "Spectral";
   font-weight: 500;
   font-size: 20px;
   line-height: 30px;
   margin-bottom: 72px;
 }
 
+div {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
 a {
+  color: #ebf1fb;
   padding: 16px 32px;
-  font-family: "Spectral";
   font-weight: 600;
   font-size: 24px;
   line-height: 24px;
 }
 
+a:hover,
 .btn-recipes {
   background-color: #5eead4;
   color: #0b0c0e;
   border-radius: 8px;
   text-decoration: none;
+}
+
+.btn-recipes:hover {
+  background-color: #aaeee4;
 }
